@@ -5,7 +5,7 @@
     "description": "Users APi",
     "version": "1.0.0"
   },
-  "host": "project1-hmul.onrender.com/",
+  "host": "project1-hmul.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
