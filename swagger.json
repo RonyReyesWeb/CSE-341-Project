@@ -5,9 +5,10 @@
     "description": "Users APi",
     "version": "1.0.0"
   },
-  "host": "project1-hmul.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
@@ -24,11 +25,10 @@
         }
       }
     },
-   
-    "/users/": {
+    "/contacts/": {
       "get": {
         "tags": [
-          "Users"
+          "Contacts"
         ],
         "description": "",
         "produces": [
@@ -42,7 +42,7 @@
       },
       "post": {
         "tags": [
-          "Users"
+          "Contacts"
         ],
         "description": "",
         "parameters": [
@@ -52,16 +52,19 @@
             "schema": {
               "type": "object",
               "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
                 "email": {
                   "example": "any"
                 },
-                "username": {
+                "favoriteColor": {
                   "example": "any"
                 },
-                "name": {
-                  "example": "any"
-                },
-                "ipaddress": {
+                "birthday": {
                   "example": "any"
                 }
               }
@@ -78,10 +81,10 @@
         }
       }
     },
-    "/users/{id}": {
+    "/contacts/{id}": {
       "get": {
         "tags": [
-          "Users"
+          "Contacts"
         ],
         "description": "",
         "produces": [
@@ -103,7 +106,7 @@
       },
       "put": {
         "tags": [
-          "Users"
+          "Contacts"
         ],
         "description": "",
         "parameters": [
@@ -119,16 +122,19 @@
             "schema": {
               "type": "object",
               "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
                 "email": {
                   "example": "any"
                 },
-                "username": {
+                "favoriteColor": {
                   "example": "any"
                 },
-                "name": {
-                  "example": "any"
-                },
-                "ipaddress": {
+                "birthday": {
                   "example": "any"
                 }
               }
@@ -146,7 +152,7 @@
       },
       "delete": {
         "tags": [
-          "Users"
+          "Contacts"
         ],
         "description": "",
         "parameters": [
